@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.2)) ,url("backgroundntr.jpg");
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+            
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 95%;
+        }
+        .register a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 2.5px solid indianred;
+        }
+        .h-txt{
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            transform: translate(-50%,-50%);
+            text-align: right;
+            
+            color: white;
+            border-radius: 5px;
+           display: -ms-inline-flexbox;
+           background-color: rgba(0, 0, 0, 0.459);
+           margin: 10px auto;
+           justify-content: space-around;
+           padding: 50px;
+        }
+       
+        .h-txt h1{
+            font-size: 55px;
+        }
+        .h-txt a{
+            top: 75%;
+            text-decoration: none;
+            background: indianred;
+            color:white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            border-radius: 8px;
+            transition: 0.5s;
+        }
+        .h-txt a:hover{
+
+        background: transparent;
+            border: 2.5px solid indianred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Tour World
+            </div>
+            <div class="menu">
+                <a href="home" class="home">Home</a>
+                <a href="hillstn" class="Hill Stations">Hill Stations</a>
+                <a href="offer" class="Best Offers">Best Offers</a>
+                <a href="contact" class="Contact">Contact</a>
+                
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+        <section class="h-txt">
+            <h1>International Travel Agency</h1>
+            <a href="#">Book your tour here!</a>
+        </section>
+    </header>
+</body>
+</html>
